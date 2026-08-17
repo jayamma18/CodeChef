@@ -40,7 +40,7 @@ Notice how we don't use " " (double quotes) when printing variables.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:18:33.037Z  
+**Submitted:** 2026-08-17T10:18:38.205Z  
 
 ```py
 # Replace __ with 25
