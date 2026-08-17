@@ -1,8 +1,8 @@
+# cook your dish here
+a = -50
+b = 40
 
-s = 14
+total = a + b
+product = a * b
 
-area = s * s
-cost = area * 7
-
-print(area)
-print(cost)# Update your code below this line
+print(total, product)
