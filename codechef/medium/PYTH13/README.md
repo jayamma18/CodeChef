@@ -46,7 +46,7 @@ print(82, 2, " ", 3)
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:04:38.935Z  
+**Submitted:** 2026-08-17T10:04:42.227Z  
 
 ```cpp
 # Add "equals" and 10 at the place of __, __
