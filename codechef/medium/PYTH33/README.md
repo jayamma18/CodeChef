@@ -19,7 +19,7 @@ Write a program which does the following:
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T10:51:32.833Z  
+**Submitted:** 2026-08-19T05:25:52.027Z  
 
 ```py
 # cook your dish here
