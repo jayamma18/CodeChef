@@ -101,7 +101,7 @@ No rotation of a sorted array can produce this order.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T09:43:57.064Z  
+**Submitted:** 2026-08-31T09:45:43.705Z  
 
 ```java
 public static boolean check(int[] nums) {
