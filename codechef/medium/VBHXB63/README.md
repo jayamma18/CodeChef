@@ -33,7 +33,7 @@ Complete the code to check if the path is `/greet` or not.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T06:49:54.181Z  
+**Submitted:** 2026-09-16T07:07:05.853Z  
 
 ```cpp
 const http = require('http');
