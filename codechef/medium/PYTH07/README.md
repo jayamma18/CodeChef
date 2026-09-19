@@ -38,7 +38,7 @@ Write a program which does the following
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-17T10:49:39.364Z  
+**Submitted:** 2026-09-17T10:48:25.857Z  
 
 ```py
 # Solution as follows
