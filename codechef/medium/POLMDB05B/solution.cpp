@@ -1,0 +1,2 @@
+
+printjson(allProducts);
