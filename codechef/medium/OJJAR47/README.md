@@ -4,37 +4,28 @@
 
 ## Problem
 
-### Total Price Calculation
+### Sum Total Amount Spent
 
-In this example, create a simple shopping cart that contains the prices of various items. Your task is to calculate the total price of all items using the `reduce()` method.
-
-Given an array representing the prices of items in our cart:
-
-```
-const cartPrices = [29.99, 9.99, 4.99, 14.99, 25.00];
-
-// We will use reduce to calculate the total price of items
-
-```
-
-Use the `reduce()` method to sum up all the prices in the `cartPrices` array. The initial value for the accumulator will be `0`, and we will add each price to this accumulator. And print the value.
-
-Once You write the code, run it to see the total price of our items in the cart. Remember to click the submit button to observe the output!
+You are given an array of strings, where each string is a word. Your task is to find and return the longest word in the array. If there are multiple words with the same maximum length, return the one that appears first. Use the `reduce()` method to solve this problem.
 
 ## Solution
 
 **Language:** JavaScript  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T10:29:47.846Z  
+**Submitted:** 2026-09-21T10:34:29.499Z  
 
 ```js
-const cartPrices = [29.99, 9.99, 4.99, 14.99, 25.00];
+const words = ["apple", "banana", "cherry", "watermelon", "kiwi"];
 
 // complete the code 
-// Using reduce to calculate the total price
-const totalPrice =cartPrices.reduce((accumulator,price)=>accumulator+price,0);
-console.log(totalPrice);
+
+
+const f=words.reduce((longest,current)=>{
+    return current.length>longest.length?current:longest;
+});
+console.log(f);
+
 ```
 
 ---
