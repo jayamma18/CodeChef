@@ -1,5 +1,5 @@
-let names = ["John", "Emily", "Michael", "Sara", "Chris", "Kate"];
-let shortNames = names.filter((name) => {
-    return name.length <= 5;
-});
-console.log(shortNames);
+let words = ["apple", "banana", "pear", "kiwi", "grape", "orange"];
+
+// complete the code 
+let shortWords=words.filter(word=>word.length <= 4);
+console.log(shortWords)
