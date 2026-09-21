@@ -4,25 +4,36 @@
 
 ## Problem
 
-### Square the Numbers
+### Convert Array of Strings to Uppercase Using map()
 
-You are given an array of integers. Your task is to create a new array where each element is the  **square**  of the original array's elements using the `map()` function.
+You are given an array of strings. Your task is to create a new array where each string is converted to its uppercase(use  **`toUpperCase`**  function) version. You  **must**  use the `.map()` method to achieve this.
+
+### Sample 1:
+Input
+Output
+
+```
+['hello', 'world', 'javascript']
+```
+
+```
+[ 'HELLO', 'WORLD', 'JAVASCRIPT' ]
+```
 
 ## Solution
 
 **Language:** JavaScript  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T09:36:08.871Z  
+**Submitted:** 2026-09-21T09:39:10.949Z  
 
 ```js
-const numbers = [1, 2, 3, 4, 5];
+const words = ['hello', 'world', 'javascript'];
 
 // complete the code 
-const squaredNumbers = numbers.map(num=>num*num); 
+const uppercaseWords=words.map(word=>word.toUpperCase()) ;
 
-console.log(squaredNumbers); 
-
+console.log(uppercaseWords); 
 ```
 
 ---
