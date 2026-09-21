@@ -1,14 +1,15 @@
-let originalNumbers = [1, 5, 10];
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 22 }
+];
 
-// Create an empty array to store the results
 
-// Iterate over the original numbers
-let doubledNumbers=[];
-// Calculate the doubled value
-
-// Add the doubled value to our new array
-originalNumbers.forEach(num=> {
-    doubledNumbers.push(num*2);
+// Complete the code below.
+// formated log
+users.forEach(user=>{
+console.log(`Hello, ${user.name}! You are ${user.age} years old.`);
 });
-
-console.log("Doubled:",doubledNumbers );
+//users.forEach(user=>{
+    //console.log('Hello, ${user.name}! You are ${user.age} years old.');
+//});
