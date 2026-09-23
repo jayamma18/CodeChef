@@ -27,35 +27,32 @@ Now you have a component that displays what you type and can generate random tex
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T07:14:29.142Z  
+**Submitted:** 2026-09-23T07:16:13.076Z  
 
 ```cpp
+const [value, setValue] = useState("");
+const generateRandomString = () => {
+const randomStr = Math.random().toString(36).substring(2, 8);
+setValue(randomStr);
+};
+return (
+<div className="container">
+<input
+type="text"
+value={value}
+onChange={(e) => setValue(e.target.value)}
+placeholder="Type something..."
+/>
+<div className="output-box">
+<h3>Live Display: {value}</h3>
+</div>
+<button className="btn" onClick={generateRandomString}>
+Generate Random String
+</button>
+</div>
+);
+}
 
-export default function App() {
-  const [value, setValue] = useState("");
-
-    const generateRandomString = () => {
-        const randomStr = Math.random().toString(36).substring(2, 8);
-            setValue(randomStr);
-              };
-
-                return (
-                    <div className="container">
-                          <input
-                                  type="text"
-                                          value={value}
-                                                  onChange={(e) => setValue(e.target.value)}
-                                                          placeholder="Type something..."
-                                                                />
-                                                                      <div className="output-box">
-                                                                              <p>Live Display: {value}</p>
-                                                                                    </div>
-                                                                                          <button className="btn" onClick={generateRandomString}>
-                                                                                                  Generate Random String
-                                                                                                        </button>
-                                                                                                            </div>
-                                                                                                              );
-                                                                                                              }
 ```
 
 ---
