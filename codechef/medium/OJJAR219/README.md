@@ -43,95 +43,10 @@ Your goal is to take the provided template code and modify it to use `useImmer` 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T08:50:41.870Z  
+**Submitted:** 2026-09-28T08:52:00.178Z  
 
 ```cpp
 import { useImmer } from "use-immer";
-import "./App.css"; // Assuming you have the CSS in App.css or styles.css
-
-function ProfileEditor() {
-  // 1. Initial state managed with useImmer
-    const [user, updateUser] = useImmer({
-        name: "Alice Wonderland",
-            email: "alice@example.com",
-                address: {
-                      street: "123 Imagination Lane",
-                            city: "Storybook City",
-                                },
-                                  });
-
-                                    // 2. Handle input changes using Immer's mutable-style updates
-                                      const handleInputChange = (event) => {
-                                          const { name, value } = event.target;
-
-                                              updateUser((draft) => {
-                                                    if (name === "name" || name === "email") {
-                                                            draft[name] = value;
-                                                                  } else if (name === "street" || name === "city") {
-                                                                          draft.address[name] = value;
-                                                                                }
-                                                                                    });
-                                                                                      };
-
-                                                                                        return (
-                                                                                            <div className="profile-editor">
-                                                                                                  <h2>Edit Your Profile</h2>
-
-                                                                                                        <div className="form-group">
-                                                                                                                <label htmlFor="name">Name:</label>
-                                                                                                                        <input
-                                                                                                                                  type="text"
-                                                                                                                                            id="name"
-                                                                                                                                                      name="name"
-                                                                                                                                                                value={user.name}
-                                                                                                                                                                          onChange={handleInputChange}
-                                                                                                                                                                                  />
-                                                                                                                                                                                        </div>
-
-                                                                                                                                                                                              <div className="form-group">
-                                                                                                                                                                                                      <label htmlFor="email">Email:</label>
-                                                                                                                                                                                                              <input
-                                                                                                                                                                                                                        type="email"
-                                                                                                                                                                                                                                  id="email"
-                                                                                                                                                                                                                                            name="email"
-                                                                                                                                                                                                                                                      value={user.email}
-                                                                                                                                                                                                                                                                onChange={handleInputChange}
-                                                                                                                                                                                                                                                                        />
-                                                                                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                                                                                                    <div className="form-group">
-                                                                                                                                                                                                                                                                                            <label htmlFor="street">Street:</label>
-                                                                                                                                                                                                                                                                                                    <input
-                                                                                                                                                                                                                                                                                                              type="text"
-                                                                                                                                                                                                                                                                                                                        id="street"
-                                                                                                                                                                                                                                                                                                                                  name="street"
-                                                                                                                                                                                                                                                                                                                                            value={user.address.street}
-                                                                                                                                                                                                                                                                                                                                                      onChange={handleInputChange}
-                                                                                                                                                                                                                                                                                                                                                              />
-                                                                                                                                                                                                                                                                                                                                                                    </div>
-
-                                                                                                                                                                                                                                                                                                                                                                          <div className="form-group">
-                                                                                                                                                                                                                                                                                                                                                                                  <label htmlFor="city">City:</label>
-                                                                                                                                                                                                                                                                                                                                                                                          <input
-                                                                                                                                                                                                                                                                                                                                                                                                    type="text"
-                                                                                                                                                                                                                                                                                                                                                                                                              id="city"
-                                                                                                                                                                                                                                                                                                                                                                                                                        name="city"
-                                                                                                                                                                                                                                                                                                                                                                                                                                  value={user.address.city}
-                                                                                                                                                                                                                                                                                                                                                                                                                                            onChange={handleInputChange}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div className="display-info">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h3>Current Profile Information:</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p><strong>Name:</strong> {user.name}</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p><strong>Email:</strong> {user.email}</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p><strong>Address:</strong> {user.address.street}, {user.address.city}</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            export default ProfileEditor;
 ```
 
 ---
