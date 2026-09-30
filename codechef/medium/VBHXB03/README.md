@@ -42,14 +42,14 @@ Node.js will execute the code, and you'll see the Fahrenheit equivalent of the C
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T10:17:39.742Z  
+**Submitted:** 2026-09-30T09:30:28.862Z  
 
 ```cpp
 // Define the Celsius temperature
-let celsius=25;
-// Convert Celsius to Fahrenheit using the formula: F = (C * 9/5) + 32
-let fahrenheit=(celsius*9/5)+32
+const celsius = 25;
 
+// Convert Celsius to Fahrenheit using the formula: F = (C * 9/5) + 32
+const fahrenheit = (celsius * 9 / 5) + 32;
 
 // Print the result
 console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
