@@ -61,7 +61,7 @@ No element in the array has an absolute difference of $10$ or less with the numb
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T08:54:16.614Z  
+**Submitted:** 2026-09-30T08:56:12.592Z  
 
 ```java
 import java.util.*;
@@ -87,7 +87,7 @@ class Codechef
 		        c0++;
 		    }
 		}
-		if(c==0){
+		if(c0==0){
 		    System.out.println(-1);
 		}
 		else{
