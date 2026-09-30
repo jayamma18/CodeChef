@@ -21,7 +21,7 @@ class Codechef
 		        c0++;
 		    }
 		}
-		if(c==0){
+		if(c0==0){
 		    System.out.println(-1);
 		}
 		else{
