@@ -32,9 +32,31 @@ Take your time, and make sure the folder names and file names are exact! This se
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T07:16:27.371Z  
+**Submitted:** 2026-10-03T05:52:48.398Z  
 
 ```cpp
+import './App.css';
+
+// Inline Header Component
+function Header() {
+  return <header><h1>Header</h1></header>;
+  }
+
+  // Inline Hero Component
+  function Hero() {
+    return <section><h2>Hero Section</h2></section>;
+    }
+
+    // Inline About Component
+    function About() {
+      return <section><h2>About Section</h2></section>;
+      }
+
+      // Inline Projects Component
+      function Projects() {
+        return <section><h2>Projects Section</h2></section>;
+        }
+
         // Inline Blog Component
         function Blog() {
           return <section><h2>Blog Section</h2></section>;
