@@ -1,4 +1,6 @@
-const express = require('express');
-const mongoose = require('mongoose');
+    module.exports = app;
+    });
 
-// Initialize Express app
+          console.log(`🚀 Server is running at http://localhost:${port}`);
+    app.listen(port, () => {
+    // Start server
