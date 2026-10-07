@@ -38,13 +38,15 @@ Complete the `mongoURI` with your own MongoDB atlas connection string to connect
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T07:19:47.716Z  
+**Submitted:** 2026-10-07T06:43:05.563Z  
 
 ```cpp
-const express = require('express');
-const mongoose = require('mongoose');
+    module.exports = app;
+    });
 
-// Initialize Express app
+          console.log(`🚀 Server is running at http://localhost:${port}`);
+    app.listen(port, () => {
+    // Start server
 ```
 
 ---
