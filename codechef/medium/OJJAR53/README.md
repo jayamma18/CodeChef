@@ -63,10 +63,18 @@ Submit your code to check if it's correct or not
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T07:02:19.892Z  
+**Submitted:** 2026-10-12T09:31:45.362Z  
 
 ```cpp
 import React from 'react';
+export function App() {
+const username = "Chef";
+const currentYear = new Date().getFullYear();
+return (
+<div>
+Welcome, {username}! Happy {currentYear}!
+</div>
+);
 ```
 
 ---
