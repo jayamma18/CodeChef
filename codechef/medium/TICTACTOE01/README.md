@@ -36,20 +36,12 @@ You'll implement the winner logic in the next part of the project!
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T10:07:46.916Z  
+**Submitted:** 2026-10-18T11:04:45.082Z  
 
 ```cpp
 import React from 'react';
 
 function Square({ value, onClick }) {
-return (
-<button className="square" onClick={onClick}>
-{value}
-</button>
-);
-}
-
-export default Square;
 ```
 
 ---
