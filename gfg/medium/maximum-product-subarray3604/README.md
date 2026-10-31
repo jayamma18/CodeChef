@@ -34,40 +34,33 @@ Explanation: For an array with all positive elements, the result is product of a
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-31T08:09:24.937Z  
+**Submitted:** 2026-10-31T08:09:48.470Z  
 
 ```java
 class Solution {
     int maxProduct(int[] arr) {
-        if (arr == null || arr.length == 0) {
-            return 0;
-        }
+        int n = arr.length;
+        int maxProd = Integer.MIN_VALUE;
+        int leftToRight = 1;
+        int rightToLeft = 1;
 
-        // Initialize tracking variables with the first element
-        int maxSoFar = arr[0];
-        int minSoFar = arr[0];
-        int overallMax = arr[0];
+        for (int i = 0; i < n; i++) {
+            leftToRight *= arr[i];
+            rightToLeft *= arr[n - 1 - i];
 
-        // Traverse the array from the second element
-        for (int i = 1; i < arr.length; i++) {
-            int current = arr[i];
+            // Record the maximum product found so far
+            maxProd = Math.max(maxProd, Math.max(leftToRight, rightToLeft));
 
-            // If the current element is negative, swap maxSoFar and minSoFar
-            if (current < 0) {
-                int temp = maxSoFar;
-                maxSoFar = minSoFar;
-                minSoFar = temp;
+            // Reset the running product if a zero is encountered
+            if (leftToRight == 0) {
+                leftToRight = 1;
             }
-
-            // Update max and min product ending at the current position
-            maxSoFar = Math.max(current, maxSoFar * current);
-            minSoFar = Math.min(current, minSoFar * current);
-
-            // Update the global maximum product found so far
-            overallMax = Math.max(overallMax, maxSoFar);
+            if (rightToLeft == 0) {
+                rightToLeft = 1;
+            }
         }
 
-        return overallMax;
+        return maxProd;
     }
 }
 
