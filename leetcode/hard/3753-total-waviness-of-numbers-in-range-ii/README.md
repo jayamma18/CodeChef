@@ -69,9 +69,9 @@ Number `4848`: the second digit 8 is a peak, and the third digit 4 is a valley, 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 227 ms (beats 16.02%)  
-**Memory:** 46.4 MB (beats 45.63%)  
-**Submitted:** 2026-11-01T11:05:57.223Z  
+**Runtime:** 235 ms (beats 16.02%)  
+**Memory:** 46.4 MB (beats 51.46%)  
+**Submitted:** 2026-11-01T12:10:23.939Z  
 
 ```java
 import java.util.Arrays;
