@@ -1,36 +1,21 @@
 import java.util.Arrays;
 
 class Solution {
-    // Helper class to group item properties and compute ratios accurately
-    static class Item implements Comparable<Item> {
-        int value;
-        int weight;
-        double ratio;
-
-        Item(int value, int weight) {
-            this.value = value;
-            this.weight = weight;
-            this.ratio = (double) value / weight;
-        }
-
-        // Sort in descending order of value/weight ratio
-        @Override
-        public int compareTo(Item other) {
-            return Double.compare(other.ratio, this.ratio);
-        }
-    }
-
     public double fractionalKnapsack(int[] val, int[] wt, int capacity) {
         int n = val.length;
-        Item[] items = new Item[n];
 
-        // Pack values and weights into our custom Item structures
+        // Create an index array to sort elements based on ratio without altering original inputs
+        Integer[] indices = new Integer[n];
         for (int i = 0; i < n; i++) {
-            items[i] = new Item(val[i], wt[i]);
+            indices[i] = i;
         }
 
-        // Sort items by their density ratio (Greedy Choice Property)
-        Arrays.sort(items);
+        // Sort indices in descending order based on value-to-weight ratio
+        Arrays.sort(indices, (a, b) -> {
+            double ratioA = (double) val[a] / wt[a];
+            double ratioB = (double) val[b] / wt[b];
+            return Double.compare(ratioB, ratioA); // Descending order
+        });
 
         double totalValue = 0.0;
         int currentCapacity = capacity;
@@ -40,15 +25,17 @@ class Solution {
                 break;
             }
 
-            // If the whole item can fit, take it completely
-            if (items[i].weight <= currentCapacity) {
-                totalValue += items[i].value;
-                currentCapacity -= items[i].weight;
+            int idx = indices[i];
+
+            // If the full item fits, take it completely
+            if (wt[idx] <= currentCapacity) {
+                totalValue += val[idx];
+                currentCapacity -= wt[idx];
             } 
-            // Otherwise, take the maximum fraction possible
+            // Otherwise, take the maximum fraction possible and stop
             else {
-                totalValue += items[i].ratio * currentCapacity;
-                currentCapacity = 0;
+                totalValue += ((double) val[idx] / wt[idx]) * currentCapacity;
+                break;
             }
         }
 
