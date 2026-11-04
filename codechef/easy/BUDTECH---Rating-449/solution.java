@@ -12,8 +12,7 @@ class Codechef
 		{
 		int a=sc.nextInt();
 		a=a*100;
-		System.out.println(a);
-		}// your code goes here
+		System.out.prE goes here
 
 	}
 }
