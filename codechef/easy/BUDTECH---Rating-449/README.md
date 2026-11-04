@@ -52,7 +52,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T13:23:21.649Z  
+**Submitted:** 2026-11-04T13:25:20.729Z  
 
 ```java
 import java.util.*;
@@ -69,8 +69,7 @@ class Codechef
 		{
 		int a=sc.nextInt();
 		a=a*100;
-		System.out.println(a);
-		}// your code goes here
+		System.out.prE goes here
 
 	}
 }
