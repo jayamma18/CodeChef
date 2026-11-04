@@ -1,13 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class Codechef {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt(); 
         while (n-- > 0) {
-            int a = sc.nextInt(), b = sc.nextInt(), c = sc.nextInt();
-            System.out.println(a + b + c - Math.max(a, Math.max(b, c)) - Math.min(a, Math.min(b, c)));
+            int[] nums = new int[3];
+            nums[0] = scanner.nextInt();
+            nums[1] = scanner.nextInt();
+            nums[2] = scanner.nextInt();
+            Arrays.sort(nums); 
+            System.out.println(nums[1]); 
         }
+        scanner.close();
     }
 }
