@@ -44,9 +44,9 @@ Explanation: We can show that there is no prime number pair that gives a sum of 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1973 ms (beats 19.69%)  
-**Memory:** 52.8 MB (beats 93.23%)  
-**Submitted:** 2026-11-05T06:50:34.444Z  
+**Runtime:** 0 ms  
+**Memory:** 41.8 MB  
+**Submitted:** 2026-11-05T06:50:42.823Z  
 
 ```java
 import java.util.*;
