@@ -41,9 +41,9 @@ Explanation: Both "apply" and "apple" can be built from other words in the dicti
 ## Solution
 
 **Language:** Java  
-**Runtime:** 17 ms (beats 55.83%)  
-**Memory:** 46 MB (beats 91.26%)  
-**Submitted:** 2026-11-05T10:45:40.160Z  
+**Runtime:** 0 ms  
+**Memory:** 41.5 MB  
+**Submitted:** 2026-11-05T10:45:50.684Z  
 
 ```java
 import java.util.Arrays;
