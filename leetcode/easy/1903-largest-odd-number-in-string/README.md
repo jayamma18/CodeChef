@@ -47,9 +47,9 @@ Explanation: "35427" is already an odd number.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 99.85%)  
-**Memory:** 46.6 MB (beats 83.47%)  
-**Submitted:** 2026-11-05T09:44:18.470Z  
+**Runtime:** 0 ms  
+**Memory:** 41.1 MB  
+**Submitted:** 2026-11-05T09:45:12.650Z  
 
 ```java
 class Solution {
