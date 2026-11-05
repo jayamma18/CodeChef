@@ -37,27 +37,21 @@ You don't need to read or print anything. Your task is to complete the functionÂ
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-05T04:45:55.546Z  
+**Submitted:** 2026-11-05T04:46:59.781Z  
 
 ```java
 class Solution {
     public String isAutomorphic(int n) {
-        long square = (long) n * n;
-        int temp = n;
-        long multiplier = 1;
+        long sq = (long) n * n;
 
-        // Find the base (10, 100, 1000...) based on the number of digits in n
-        while (temp > 0) {
-            multiplier *= 10;
-            temp /= 10;
+        // Loop while there are digits left in n
+        while (n > 0) {
+            if (n % 10 != sq % 10) return "Not Automorphic";
+            n /= 10;
+            sq /= 10;
         }
 
-        // If the remainder of the square divided by the multiplier equals n
-        if (square % multiplier == n) {
-            return "Automorphic";
-        }
-
-        return "Not Automorphic";
+        return "Automorphic";
     }
 }
 
