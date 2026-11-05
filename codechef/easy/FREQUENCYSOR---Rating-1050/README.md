@@ -104,20 +104,15 @@ bbbdddaac
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-05T10:23:43.282Z  
+**Submitted:** 2026-11-05T10:24:43.604Z  
 
 ```java
 public static String sortByFrequency(String s) {
-        // Count frequency of each character
         Map<Character, Integer> freq = new HashMap<>();
         for (char c : s.toCharArray()) {
             freq.put(c, freq.getOrDefault(c, 0) + 1);
         }
-
-        // Convert map to list of characters
         List<Character> chars = new ArrayList<>(freq.keySet());
-
-        // Sort by frequency (descending), then lexicographical (ascending)
         Collections.sort(chars, (a, b) -> {
             int fa = freq.get(a);
             int fb = freq.get(b);
